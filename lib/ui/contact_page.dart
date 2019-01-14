@@ -47,7 +47,7 @@ class _ContactPageState extends State<ContactPage> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope( //chama uma funcao minha quando eu clicar no botao de voltar na tela 
-      onWillPop: _requestPop,
+      onWillPop: _requestPop, //funcao que abre um popup pra perguntar se o user tem ctz de sair
       child: Scaffold(
         appBar: AppBar(
           title:Text(_editedContact.name ?? "Novo contato"), // ?? p o caso de nulos
